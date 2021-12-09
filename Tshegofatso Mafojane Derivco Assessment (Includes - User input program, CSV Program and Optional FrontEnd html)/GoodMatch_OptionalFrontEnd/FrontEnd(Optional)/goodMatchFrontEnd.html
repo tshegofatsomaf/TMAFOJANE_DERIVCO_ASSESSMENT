@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<title>Good Match!</title>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrik-to-fit-no">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+		<link rel="stylesheet" href="bootstrap.min.css">
+
+		<script src="goodMatchAlgorithm.js"></script>
+		<script src="jquery.min.js"></script>
+
+	</head>
+
+	<body style="background-color: #262626">
+
+		<div class="container mt-4">
+
+			<div id="header" class="border rounded text-center col-sm-12 mt-4 mb-4" style="background-color: #383838; color: white">
+				<h1>Good Match Program By Tshegofatso Mafojane</h1>
+			</div>
+
+			<div class="border rounded col-sm-12" style="font-size:140%; background-color: #383838; color: white">
+				<form class="text-center m-4 center_div">
+
+					<fieldset class="form-group row">
+						<label for="nameOne" class="col-sm-4">Tennis Player One</label>
+						<div class="col-sm-8">
+							<input type="text" class="form-control" id="nameOne" name="nameOne" placeholder="Please enter a name"><br>
+						</div>
+					</fieldset>
+
+					<fieldset class="form-group row">
+						<label for="nameTwo" class="col-sm-4">Tennis Player Two</label>
+						<div class="col-sm-8">
+							<input type="text" class="form-control" id="nameTwo" name="nameTwo" placeholder="Please enter a name"><br>
+						</div>
+					</fieldset>
+
+					<fieldset class="form-group">
+						<button type="button" style="font-size:90%" class="btn btn-secondary" onclick="runAlgorithm()">Match!</button>
+					</fieldset>
+
+				</form>
+			</div>
+
+			<div id="messages" class="border rounded text-center col-sm-12 mt-4 mr-4 mb-4" style="font-size:140%; display:none; background-color: #383838; color: white">
+
+				<div id="result" style="display: none">
+					<label id="compatLabel">Compatibility: </label>
+					<p id="match"></p>
+				</div>
+
+				<div id="error" style="display: none">
+					<p id="errorMessage"></p>
+				</div>
+
+			</div>
+
+		</div>
+
+	</body>
+
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "derivco-assessment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "goodMatch.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Steven Visser",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parser": "^3.0.0"
+  },
+  "type": "module"
+}
